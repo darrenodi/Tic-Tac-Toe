@@ -12,7 +12,7 @@ const displayController = (() => {
   while(count<10) {
     const getDiv = document.getElementById("gameboard");
     var randomItem = displayController[Math.floor(Math.random()*displayController.length)];
-    getDiv.innerHTML += "<div class=\"gameboarditem\"><button class=\"tikbutton\"></button></div>";
+    getDiv.innerHTML += "<div class=\"gameboarditem\"><button class=\"tikbutton\">Click</button></div>";
 
     count++;
   }
