@@ -18,7 +18,7 @@ const displayController = (() => {
   }
 
   return {
-    displayController,
+    displayController;
   };
 })()
 
@@ -26,3 +26,7 @@ const Player = (name) => {
   return {name};
 }
 
+document.getElementsByClassName("tikbutton").addEventListener("click",displayThis);
+function displayThis(){
+  console.log("your eggs");
+}

@@ -7,8 +7,7 @@ body {
   grid-template-columns: auto auto auto;
   background-color: #3621af;
   padding: 10px;
-  margin: 10px;
-  text-align: center;
+  margin: 100px 100px;
   width: 50%;
 }
 
@@ -19,5 +18,4 @@ body {
   padding: 20px;
   font-size: 30px;
   text-align: center;
-  margin: 50px;
 }
