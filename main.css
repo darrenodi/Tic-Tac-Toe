@@ -11,8 +11,7 @@ body {
   width: 50%;
 }
 
-.gameboarditem,
-.tikbutton {
+.gameboarditem {
   background-color: rgba(143, 60, 71, 0.8);
   border: 1px solid rgba(71, 21, 21, 0.8);
   padding: 20px;

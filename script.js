@@ -12,21 +12,22 @@ const displayController = (() => {
   while(count<10) {
     const getDiv = document.getElementById("gameboard");
     var randomItem = displayController[Math.floor(Math.random()*displayController.length)];
-    getDiv.innerHTML += "<div class=\"gameboarditem\"><button class=\"tikbutton\">Click</button></div>";
-
+    getDiv.innerHTML += "<div class=\"gameboarditem\"><button class=\"tikbutton\">"+randomItem+"</button></div>";
     count++;
   }
 
   return {
-    displayController;
+    displayController,
   };
 })()
 
-const Player = (name) => {
-  return {name};
-}
+const playerData = (name, mark) => {
+  const setMark = () => console.log('hello!');
+  return { name, mark, setMark };
+};
 
-document.getElementsByClassName("tikbutton").addEventListener("click",displayThis);
+
+document.querySelector(".tikbutton").addEventListener("click",displayThis);
 function displayThis(){
   console.log("your eggs");
 }
